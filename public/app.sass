@@ -23,7 +23,7 @@ body
 		text-decoration: none
 
 nav
-	height: 13.15%
+	min-height: 13.15%
 	width: 100vw
 	background-color: white
 	color: $blue
@@ -37,13 +37,13 @@ nav
 
 	.logo-container
 		margin-left: 8%
-		margin-top: 1%
+		margin-top: .5%
 
 		h1
 			font-size: 3.25em
 			font-weight: 800
 
-		.logo
+		.logo-word
 			color: $pink
 
 		.copyright
@@ -67,23 +67,22 @@ nav
 
 	.collapsed-menu
 		width: 12%
-		height: 100%
 		position: relative
 		right: 8%
 
 		#menu-bar
-			width: 65%
-			min-width: 75px
-			height: 65%
+			width: 50%
+			min-width: 45px
 			position: relative
 			top: 19%
 			display: none
 
 header
 	margin-top: 85px
-	background-image: url("assets/image.jpg")
+	background: url("assets/image.jpg") no-repeat
 	background-size: cover
-	height: 65vh
+	background-position-x: 57%
+	height: 78vh
 	text-align: center
 	clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%)
 
@@ -140,21 +139,18 @@ section
 	.full-menu
 		display: none
 
+	nav .logo-container
+		margin-top: 1.5%
+
+	nav .logo-container h1
+		font-size: 2.25em
+
 	nav .collapsed-menu #menu-bar
 		display: initial
-
-	header
-		background-image: url("assets/image915.jpg")
 
 @media (max-width: 550px) 
-	.full-menu
-		display: none
-
-	nav .collapsed-menu #menu-bar
-		display: initial
-
-	header
-		background-image: url("assets/image555.jpg")
+	nav .logo-container
+		margin-top: 3%
 
 	nav .logo-container h1
 		font-size: 2em
